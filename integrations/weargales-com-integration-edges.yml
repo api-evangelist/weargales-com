@@ -1,0 +1,22 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/weargales-com/integrations
+- https://zapier.com/apps/weargales/integrations
+- https://zapier.com/apps/stand/integrations
+- https://n8n.io/integrations/weargales-com/
+- https://n8n.io/integrations/weargales/
+- https://composio.dev/toolkits/weargales-com
+- https://monid.ai/tools/weargales-com
+checked:
+- https://composio.dev/toolkits/weargales-com
+- https://monid.ai/tools/weargales-com
+- https://n8n.io/integrations/weargales-com/
+- https://n8n.io/integrations/weargales/
+- https://zapier.com/apps/stand/integrations
+- https://zapier.com/apps/weargales-com/integrations
+- https://zapier.com/apps/weargales/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

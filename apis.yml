@@ -1,25 +1,75 @@
 aid: weargales-com
+
 name: STAND+
-description: 'STAND+ is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by techstars) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.standshoes.com/cdn/shop/files/STAND_TM_Social_Share_Icon_1200_x_628_1200x1200.jpg?v=1714445628
+
+description: 'STAND+ sells energy‑recovery footwear engineered to dissipate impact and reduce joint stress for standing professionals, athletes and everyday movers. The shoes feature heat‑moldable custom fit, slip‑resistant outsoles and APMA certification, and can be purchased with HSA/FSA benefits. The product line includes adult and kids models designed for long shifts, recovery days and high‑performance activities.'
+
 url: https://raw.githubusercontent.com/api-evangelist/weargales-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
-- Company
-apis: []
+- Footwear
+- Recovery Shoes
+- HSA/FSA Eligible
+- Slip‑Resistant
+- Healthcare Footwear
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- techstars
+
 common:
+- type: LLMsTxt
+  url: llms/weargales-com-llms.txt
+- type: WellKnown
+  url: well-known/weargales-com-well-known.yml
+- type: Hosts
+  url: hosts/weargales-com-hosts.yml
+- type: Vendors
+  url: vendors/weargales-com-vendors.yml
+- type: TermsOfService
+  url: https://www.standshoes.com/policies/terms-of-service
+- type: Support
+  url: https://support.weargales.com/en-US
+- type: PrivacyPolicy
+  url: https://www.standshoes.com/policies/privacy-policy
+- type: DomainSecurity
+  url: security/weargales-com-domain-security.yml
 - type: Website
   url: https://weargales.com/
+
+apis: []
+
+x-backed-by:
+- techstars
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No developer program or API documentation was found on the provider's website.
+  evidence:
+    - url: https://www.standshoes.com/developers
+      status: error
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

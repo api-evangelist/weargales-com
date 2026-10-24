@@ -1,0 +1,76 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 3
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - legal
+  - support
+  - website
+hosts:
+- host: api.standshoes.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: standshoes.com
+  role: api
+  relation: other-domain
+- host: api.weargales.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: weargales.com
+  role: api
+  relation: own
+- host: support.weargales.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: weargales.com
+  role: support
+  relation: own
+- host: weargales.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  - hosting
+  platform: shopify.com
+  vendor: cloudflare
+  registrable_domain: weargales.com
+  role: website
+  relation: own
+- host: www.standshoes.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  platform: shopify.com
+  registrable_domain: standshoes.com
+  role: legal
+  relation: other-domain
